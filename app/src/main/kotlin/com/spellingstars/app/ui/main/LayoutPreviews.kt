@@ -10,17 +10,10 @@ import com.spellingstars.app.ui.theme.SpellingStarsTheme
 import com.spellingstars.app.ui.words.WordManagerScreen
 
 @Preview(
-  name = "Flashcards_Pixel10_Font130",
+  name = "Flashcards_Pixel10",
   widthDp = 411,
-  heightDp = 923,
-  fontScale = 1.3f,
-  showBackground = true
-)
-@Preview(
-  name = "Flashcards_Pixel7_Compact_Font130",
-  widthDp = 360,
-  heightDp = 800,
-  fontScale = 1.3f,
+  heightDp = 890,
+  fontScale = 1.15f,
   showBackground = true
 )
 @Composable
@@ -39,17 +32,10 @@ fun FlashcardsPreview() {
 }
 
 @Preview(
-  name = "QuizMC_Pixel10_Font130",
+  name = "QuizMC_Pixel10",
   widthDp = 411,
-  heightDp = 923,
-  fontScale = 1.3f,
-  showBackground = true
-)
-@Preview(
-  name = "QuizMC_Pixel7_Compact_Font130",
-  widthDp = 360,
-  heightDp = 800,
-  fontScale = 1.3f,
+  heightDp = 890,
+  fontScale = 1.15f,
   showBackground = true
 )
 @Composable
@@ -68,17 +54,32 @@ fun QuizMultipleChoicePreview() {
 }
 
 @Preview(
-  name = "Words_Pixel10_Font130",
+  name = "QuizType_Pixel10",
   widthDp = 411,
-  heightDp = 923,
-  fontScale = 1.3f,
+  heightDp = 890,
+  fontScale = 1.15f,
   showBackground = true
 )
+@Composable
+fun QuizListenTypePreview() {
+  val sampleList = KidWordHelper.starterWeeklyLists().first()
+  SpellingStarsTheme {
+    PracticeQuizScreen(
+      words = sampleList.words,
+      initialMode = PracticeQuizMode.LISTEN_AND_TYPE,
+      onSpeakWord = { _, _ -> },
+      onSpeakWordWithSentence = { _, _, _ -> },
+      onRecordWordResult = { _, _ -> },
+      onQuizCompleted = { _, _, _ -> }
+    )
+  }
+}
+
 @Preview(
-  name = "Words_Pixel7_Compact_Font130",
-  widthDp = 360,
-  heightDp = 800,
-  fontScale = 1.3f,
+  name = "Words_Pixel10",
+  widthDp = 411,
+  heightDp = 890,
+  fontScale = 1.15f,
   showBackground = true
 )
 @Composable
