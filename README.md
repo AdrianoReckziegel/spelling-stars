@@ -1,5 +1,9 @@
 # 🌟 Spelling Stars — Weekly Spelling Flashcards & Audio Dictation App
 
+<p align="center">
+  <img src="docs/screenshots/app_icon.png" alt="Spelling Stars App Icon" width="140" />
+</p>
+
 **Spelling Stars** is a native Android application built with **Kotlin** and **Jetpack Compose (Material 3)** for elementary school students (ages 6–10) and their parents. It turns the weekly school spelling list into interactive 3D flip flashcards, Text-to-Speech (TTS) audio dictation, and look-alike spelling quizzes in seconds.
 
 ---
